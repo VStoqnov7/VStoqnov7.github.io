@@ -1,0 +1,718 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+/* Background */
+
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-webkit-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-moz-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-ms-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-webkit-keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-moz-keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-ms-keyframes move-clouds-back {
+    from {
+        background-position: 0;
+    }
+
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+.stars,
+.twinkling,
+.clouds {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: -1;
+}
+
+.stars {
+    background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index: -1;
+}
+
+.twinkling {
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+    z-index: -1;
+    -moz-animation: move-twink-back 200s linear infinite;
+    -ms-animation: move-twink-back 200s linear infinite;
+    -o-animation: move-twink-back 200s linear infinite;
+    -webkit-animation: move-twink-back 200s linear infinite;
+    animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    z-index: -1;
+    -moz-animation: move-clouds-back 200s linear infinite;
+    -ms-animation: move-clouds-back 200s linear infinite;
+    -o-animation: move-clouds-back 200s linear infinite;
+    -webkit-animation: move-clouds-back 200s linear infinite;
+    animation: move-clouds-back 300s linear infinite;
+}
+
+/* Navigation */
+
+.nav {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    list-style-type: none;
+    background-color: #222222;
+    margin: 0;
+
+}
+
+.nav li {
+    margin-bottom: 2px;
+    border-right: .1px solid #080808;
+    padding-right: 10px;
+}
+
+
+.nav li:last-of-type {
+    border-right: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav li a {
+    text-align: center;
+    font-size: 1.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6re;
+    border-bottom: 1.5px solid transparent;
+    font-style: italic;
+}
+
+.nav li:hover {
+    border-bottom: 1.5px solid yellow;
+    cursor: pointer;
+}
+
+/* Row 1 */
+
+.art {
+    padding-top: 4rem;
+}
+
+.art , .artist{
+    font-family: "Jersey 10", sans-serif;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.text-art {
+    color: #b63d06;
+}
+
+.artist {
+    letter-spacing: 1px;
+    color: white;
+}
+
+/* Row 2 Icons */
+.icons {
+    height: auto;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    justify-content: space-evenly;
+    background: linear-gradient(0deg, rgba(4, 4, 4, 1) 20%, rgba(77, 131, 134, 1) 50%, rgba(0, 0, 0, 1) 80%);
+    opacity: 0.6;
+}
+
+.css-description , .html-description , .javascript-description , .java-description{
+    display: none;
+    padding: 8px 4px 2px 4px;
+    color: #191919;
+    background-color: #f2f2f2;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px .1px #eee;
+    opacity: 0.8;
+    background: rgb(228, 239, 192);
+    background: -moz-linear-gradient(-45deg, rgba(228, 239, 192, 1) 0%, rgba(171, 189, 115, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(228, 239, 192, 1) 0%, rgba(171, 189, 115, 1) 100%);
+    background: linear-gradient(135deg, rgba(228, 239, 192, 1) 0%, rgba(171, 189, 115, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4efc0', endColorstr='#abbd73', GradientType=1);
+    
+}
+
+.icons div:hover .css-description,
+.icons div:hover .html-description,
+.icons div:hover .javascript-description,
+.icons div:hover .java-description {
+    display: block;
+}
+
+i {
+    font-size: 5rem;
+    margin: 2rem auto;
+    color: #93d82b;
+}
+
+h4 {
+    color: #b3d8d8;
+}
+
+h4 > span {
+    color: #97eeac;
+    font-weight: bold;
+}
+
+.personal-info {
+    color: white;
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+h5 {
+    font-weight: 200;
+}
+
+h5 > span {
+    font-weight: bold;
+    color: #97eeac;
+}
+
+/* Personal info */
+
+.personal-info > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 23rem;
+}
+
+.personal-info > i {
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    border: 1px solid #97eeac;
+    border-color: #97eeac;
+}
+
+.personal-info > p {
+    margin: 0.8rem 0rem;
+}
+
+.skills {
+    margin: 0 auto;
+}
+
+.skills p {
+    display: block;
+    padding: 0.5rem ;
+    margin: 0 auto;
+    border: 1px solid #97eeac;
+    border-radius: 0.6rem;
+    width: fit-content;
+    margin-bottom: 1rem;
+    color: #bae8b4;
+    background: #3f4b51;
+}
+
+.personal-info > p:nth-of-type(3),
+.personal-info > p:nth-of-type(4),
+.personal-info > p:nth-of-type(6),
+.personal-info > p:nth-of-type(10),
+.personal-info > p:nth-of-type(8) {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.personal-info > p:nth-of-type(6),
+.personal-info > p:nth-of-type(10){
+    padding-left: 19rem;
+    padding-right: 19rem;
+}
+
+/* Certificates */
+
+.certificate-button {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.certificate-button > a {
+    position: relative;
+    display: inline-block;
+    padding: 4px 4px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 1rem;
+    letter-spacing: 4px
+}
+
+.certificate-button > a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+}
+
+.certificate-button > a > span {
+    position: absolute;
+    display: block;
+}
+
+.certificate-button > a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.certificate-button > a > span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.certificate-button > a > span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.certificate-button > a > span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* Contact */
+
+.contact-button > a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 2px;
+    margin: 1rem auto 2rem auto;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.contact-button > a:hover {
+        background: #03e9f4;
+            color: #050801;
+            box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.contact-button > a {
+    filter: hue-rotate(110deg);
+}
+
+.contact-button > a span {
+    position: absolute;
+    display: block;
+}
+
+.contact-button > a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+ 
+}
+
+.contact-button > a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation-delay: .25s
+}
+
+.contact-button > a > span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation-delay: 0.50s;
+}
+
+.contact-button > a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation-delay: 0.75s;
+}
+
+/* Contact icons */
+
+.contact-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    top: 30%;
+}
+
+.github,
+.facebook,
+.instagram,
+.codepen,
+.email,
+.linkedin {
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+        0 0 200px #0072ff;
+}
+
+.github {
+    animation-delay: 0.3s;
+}
+
+.facebook {
+    animation-delay: 0.3s;
+}
+
+.instagram {
+    animation-delay: 0.3s;
+}
+
+.linkedin {
+    animation-delay: 0.3s;
+}
+
+.email {
+    animation-delay: 0.3s;
+}
+
+.codepen {
+    animation-delay: 0.3s;
+}
+
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.email > div > p {
+    color: #b63d06;
+}
+
+/* Footer */
+
+.footer{
+    color: #525050;
+    box-shadow: 0 0 8px .3px #202020 inset;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer > p > a {
+    text-decoration: none;
+    color: #525050;
+}
+
+.link:hover {
+    color: white;
+}
+
+/* Response 900px */
+@media (max-width: 900px) {
+
+    .resume > ul{
+        padding-right: 0.4rem;
+    }
+    .personal-info {
+        margin: 1rem;
+    }
+
+    .personal-info>p:nth-child(11),
+    .personal-info>p:nth-child(17){
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .nav li a {
+        font-size: 1rem;
+    }
+        
+    .nav {
+        font-size: 0.4rem;
+        padding-bottom: 0.8rem;
+    }
+
+    i{
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+
+    h5{
+        font-size: 1.2rem;
+    }
+
+    a{
+        font-size: 1.5rem;
+    }
+
+
+    .personal-info > img {
+    max-height: 20rem;
+    }
+
+    .personal-info>p:nth-of-type(3),
+    .personal-info>p:nth-of-type(4),
+    .personal-info>p:nth-of-type(6),
+    .personal-info>p:nth-of-type(10),
+    .personal-info>p:nth-of-type(8) {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer{
+        max-height: 0.1rem;
+    }
+
+    .footer > p {
+        font-size: 0.7rem;
+    }
+
+    .footer > p > a {
+        font-size: 0.7rem;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .nav li a{
+        font-size: 0.6rem;
+    }
+
+    .nav{
+        font-size: 0.2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    i {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    h4{
+        font-size: 0.7rem;
+    }
+
+    h5 {
+        font-size: 0.8rem;
+    }
+
+    a {
+        font-size: 1.1rem;
+    }
+
+
+    .personal-info > img {
+        max-height: 13rem;
+    }
+
+
+    .personal-info>p:nth-of-type(3),
+    .personal-info>p:nth-of-type(4),
+    .personal-info>p:nth-of-type(6),
+    .personal-info>p:nth-of-type(10),
+    .personal-info>p:nth-of-type(8) {
+        font-size: 0.6rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    #contact {
+        margin-bottom: 0.2rem;
+    }
+
+    .footer {
+        max-height: 0.1rem;
+    }
+
+    .footer>p {
+        font-size: 0.4rem;
+    }
+
+    .footer>p>a {
+        font-size: 0.4rem;
+    }
+}
