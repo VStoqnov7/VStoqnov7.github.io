@@ -582,6 +582,10 @@ h5 > span {
     color: white;
 }
 
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
 /* Response 900px */
 @media (max-width: 900px) {
 
@@ -596,6 +600,12 @@ h5 > span {
     .personal-info>p:nth-child(17){
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .email>div>p {
+        color: #b63d06;
+        word-wrap: break-word;
+        width: 9rem;
     }
 
 }
