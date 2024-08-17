@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+.background-image {
+    background-image: url('../images/digitization-5194814_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.text {
+    z-index: 5;
+    background-position: top;
+    font-family: "Jersey 10", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(42, 66, 68, 1) 20%, rgba(90, 208, 213, 1) 50%, rgba(42, 66, 68, 1) 80%);
+}
+
+h1 {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dynamic-text {
+    margin-left: 6px;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: #b63d06;
+    }
+}
+
+@keyframes hideElement {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+.change-color {
+    animation: changeColor 3s forwards;
+    animation-delay: 1s;
+}
+
+.hide-element {
+    animation: hideElement 2s forwards;
+    animation-delay: 1s;
+}
