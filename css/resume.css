@@ -132,7 +132,7 @@
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    width: 100%;
+    width: 100vw;
     list-style-type: none;
     background-color: #222222;
     margin: 0;
@@ -232,7 +232,7 @@ a {
 
 i {
     font-size: 5rem;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     color: #93d82b;
 }
 
@@ -256,7 +256,7 @@ h5 {
     font-weight: 200;
 }
 
-h5 > span {
+p > span {
     font-weight: bold;
     color: #97eeac;
 }
@@ -303,15 +303,10 @@ h5 > span {
 .personal-info > p:nth-of-type(6),
 .personal-info > p:nth-of-type(10),
 .personal-info > p:nth-of-type(8) {
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.personal-info > p:nth-of-type(6),
-.personal-info > p:nth-of-type(10){
-    padding-left: 19rem;
-    padding-right: 19rem;
-}
 
 /* Certificates */
 
@@ -586,8 +581,8 @@ h5 > span {
     margin-bottom: 0;
 }
 
-/* Response 900px */
-@media (max-width: 900px) {
+/* Response 1000px */
+@media (max-width: 1000px) {
 
     .resume > ul{
         padding-right: 0.4rem;
@@ -608,9 +603,13 @@ h5 > span {
         width: 9rem;
     }
 
+    i {
+        margin: 1rem auto;
+    }
+
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     .nav li a {
         font-size: 1rem;
@@ -628,9 +627,13 @@ h5 > span {
     p{
         font-size: 1.1rem;
     }
+    
+    h4{
+        font-size: 1.2rem;
+     }
 
     h5{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     a{
@@ -639,7 +642,7 @@ h5 > span {
 
 
     .personal-info > img {
-    max-height: 20rem;
+        max-height: 20rem;
     }
 
     .personal-info>p:nth-of-type(3),
@@ -656,18 +659,18 @@ h5 > span {
     }
 
     .footer > p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .footer > p > a {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .nav li a{
-        font-size: 0.6rem;
+        font-size: 0.9rem;
     }
 
     .nav{
@@ -676,19 +679,19 @@ h5 > span {
     }
 
     i {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     h4{
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     }
 
     h5 {
-        font-size: 0.8rem;
+        font-size: 0.55rem;
     }
 
     a {
@@ -706,7 +709,7 @@ h5 > span {
     .personal-info>p:nth-of-type(6),
     .personal-info>p:nth-of-type(10),
     .personal-info>p:nth-of-type(8) {
-        font-size: 0.6rem;
+        font-size: 1rem;
         margin-bottom: 0.6rem;
     }
     
@@ -719,10 +722,10 @@ h5 > span {
     }
 
     .footer>p {
-        font-size: 0.4rem;
+        font-size: 0.8rem;
     }
 
     .footer>p>a {
-        font-size: 0.4rem;
+        font-size: 0.8rem;
     }
 }
