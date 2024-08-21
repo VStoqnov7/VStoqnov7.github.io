@@ -14,7 +14,11 @@ img {
 
 .line {
     width: 80%;
-    height: 1px;
+    height: 3px;
     background-color: black;
     margin: 1rem auto;
+}
+
+.certificate-container{
+    text-align: center;
 }
