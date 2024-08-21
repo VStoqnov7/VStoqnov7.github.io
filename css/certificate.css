@@ -1,0 +1,20 @@
+body {
+    background: #03e9f4;
+}
+
+.certificate-container {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 40%;
+    margin: 0.5rem auto;
+}
+
+.line {
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    margin: 1rem auto;
+}
